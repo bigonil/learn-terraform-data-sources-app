@@ -3,6 +3,7 @@
 
 terraform {
   cloud {
+    organization = "lb-terraform-prd"
     workspaces {
       name = "learn-terraform-data-sources-app"
     }
@@ -11,11 +12,11 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.45.0"
+      version = ">= 5.70.1"
     }
     random = {
       source  = "hashicorp/random"
-      version = "3.4.3"
+      version = ">= 3.4.3"
     }
   }
 
